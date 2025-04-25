@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "ล้างคิว";
+}
+
+<form asp-action="ClearQueue" method="post">
+    <button type="submit" class="button btn-blue font-normol" style="width: 70%;">ล้างคิว</button>
+</form>
+
+
+<div class="number-current">หมายเลขคิวปัจจุบัน</div>
+
+<div class="queue-number">@ViewBag.Queue</div>
+
+<br />
+
+<a asp-action="Index">
+    <button class="button btn-blue font-normol"style="width: 60%;">กลับไปหน้ารับบัตรคิว</button>
+</a>

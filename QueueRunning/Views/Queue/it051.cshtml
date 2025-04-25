@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "รับบัตรคิว";
+}
+
+<form asp-action="GetQueue" method="post" font-100>
+    <button type="submit" class="button btn-blue font-100" style="width: 70%;height: 400px;">
+        รับบัตรคิว
+    </button>
+</form>
+
+<br />
+<br />
+<br />
+
+<a asp-action="PageClearQueue" >
+    <button type="submit" class="button btn-gray" style="width: 55%;">ล้างคิว</button>
+    </a>

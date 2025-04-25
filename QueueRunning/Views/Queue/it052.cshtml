@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "หมายเลขคิว";
+}
+
+<div class="number-current">หมายเลขคิว</div>
+
+<div class="queue-number">@ViewBag.Queue</div>
+
+<div class="timestamp">วันที่: @DateTime.Now.ToString("dd/MM/yyyy เวลา HH:mm")</div>
+
+<a asp-action="Index">
+    <button class="button btn-blue font-normol" style="width: 60%;">กลับไปหน้ารับบัตรคิว</button>
+</a>
